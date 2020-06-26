@@ -1,0 +1,1 @@
+This a replice of the [Old Apple product page](https://web.archive.org/web/20140301004610/http://www.apple.com/ "Apple") using only CSS and HTML. All links and buttons are non-functional

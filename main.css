@@ -1,0 +1,191 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-areas: 
+                    "verse verse verse verse"
+                    "iphone5s iphone5c mac supplier";
+    gap: 3px;
+}
+
+#wrapper:hover {
+    cursor: pointer;
+}
+
+#nav {
+    grid-area: verse;
+    width: 100vw;
+    height: 90vh;
+    background: blue url(images/verse.jpg) 50% 100% no-repeat;
+}
+
+#links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 0;
+    border: 1px solid #737373;
+    border-radius: 5px;
+}
+
+#links li {
+    display: inline;
+    height: 35px;
+    padding: 8px 30px;
+    background: linear-gradient(#666666 50%, #595959 50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+#links li:hover {
+    background: linear-gradient(#404040 50%, #333333 50%);
+}
+
+#links input {
+    width: 100px;
+    background: linear-gradient(#666666 50%, #595959 50%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: width 0.2s ease;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#links input:focus {
+    outline: none;
+    width: 150px;
+    background: seashell;
+}
+
+#search-container {
+    display: inline;
+}
+
+#links i {
+    font-size: small;
+    align-self: center;
+    color: seashell;
+    margin: 0 5px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+h2 {
+    width: 60%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+#watch {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+#watch:hover {
+    text-decoration: underline;
+}
+
+#iphone5s {
+    grid-area: iphone5s;
+    min-width: 200px;
+    height: 200px;
+}
+
+#wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#iphone5c {
+    grid-area: iphone5c;
+    min-width: 200px;
+}
+
+#mac {
+    grid-area: mac;
+    min-width: 200px;
+}
+
+#supplier {
+    grid-area: supplier;
+    min-width: 200px;
+    height: auto;
+}
+
+footer {
+    margin: 20px auto;
+    width: 1020px;
+
+}
+
+#footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-nav li {
+    display: inline;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0 5px 0 3px;
+}
+
+#shop, #footer-nav, #copyright {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#shop {
+    margin-top: 5px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0080ff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright a {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0 5px;
+}
+
+#footer-nav li:last-child, #copyright a:last-child {
+    border: none;
+}
